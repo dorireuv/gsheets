@@ -239,8 +239,6 @@ class GSheets {
         return 'SERIAL_NUMBER';
       case DateTimeRenderOption.formattedString:
         return 'FORMATTED_STRING';
-      default:
-        return 'SERIAL_NUMBER';
     }
   }
 
@@ -322,8 +320,11 @@ class GSheets {
 }
 
 enum ValueRenderOption { formattedValue, unformattedValue, formula }
+
 enum DateTimeRenderOption { serialNumber, formattedString }
+
 enum ValueInputOption { userEntered, raw }
+
 enum ExportFormat { xlsx, csv, pdf }
 
 /// Class containing additional [Spreadsheet] data
